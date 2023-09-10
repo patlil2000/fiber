@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Inter';    
+}
+
+.footer{
+  background-color: ghostwhite;
+  padding: 0  2rem;
+  display: flex;
+  gap: 1rem;
+
+ 
+
+}
+
+
+.navigation > p:nth-of-type(1){
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+
+
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-input{
+
+  margin-top: 1rem;
+
+}
+
+label{
+  display: block;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.checkbox-container:hover .checkmark {
+  background-color: #aaa;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #0a8f17;
+}
+
+.checkmark::before {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark::before {
+  display: block;
+}
+
+.checkbox-container .checkmark::before {
+  left: 7px;
+  top: 3px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.portfolio P {
+  color: #3422f5;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.diversify{
+  background-color: #3422f5;
+}
+
+
+.Testimonial{
+  border: 1px solid black;
+  border-color: gray;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  
+}
+
+.header{
+  display: flex;
+  /* border: 1px solid black; */
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.paragraph{
+  align-self: center;
+}
+
+.paragraph p:nth-child(1){
+  color: #3422f5;
+  font-weight: 600;
+}
+
+.Testimonial > p {
+  margin-bottom: 1.5rem;
+}
+
+.Testimonial button {
+  background-color: white;
+  color: #3422f5;
+  border: 1px solid grey;
+  border-color: grey;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem ;
+  padding-right :2rem ;
+  width: 100%;
+  border-radius: 5px;
+  
+}
+
+.Testimonial button:hover{
+
+  cursor: pointer;
+  background-color: #2616d6;
+  color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer  .Footer_text{
+  line-height: 1;
+
+}
+
+.footer li{
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:600px){
+
+  .container{
+    padding-left:  8rem;
+    padding-right: 5rem;
+  }
+
+  .hamburger_menu{
+  display: none;
+}
+
+.hero_section{
+
+  display: flex;
+  gap: 1rem;
+
+}
+
+article p:nth-of-type(1){
+  display: inline;
+}
+
+article p:nth-of-type(2){
+  margin-bottom: 1rem ;
+}
+
+article > h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.button_container > button{
+
+   font-family: 'Inter';
+   background-color:  #3422f5;
+   border: 0;
+   color: white;
+   font-weight: 600;
+  /* padding: 1rem 6rem; */
+   font-size: 1rem;
+   border-radius: 5px;
+   padding: 0.8rem 0.5rem;
+
+}
+
+.view{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #3422f5;
+  font-style: bold;
+  font-weight: 600;
+  align-self: center;
+  
+
+}
+
+.free_trial{
+  display: flex;
+  gap: 1.5rem;
+}
+
+article{
+  align-self: center;
+}
+
+
+.hero_image{
+  max-width: 500px;
+  order: 2;
+}
+
+.hero_image > img{
+  max-width: 100%;
+ 
+}
+
+
+
+.check-input{
+  display: flex;
+  gap: 1rem;
+}
+
+.description_section{
+  display: flex;
+  gap: 4rem;
+}
+
+.diversify > article p {
+  display: block;
+}
+
+.diversify_image{
+  width: 1000px;
+  padding-top: 3rem;
+}
+
+.diversify_image > img{
+  width: 100%;
+}
+
+.diversify{
+  display: flex;
+  padding: 0 3rem;
+  gap: 1.5rem;
+  margin-top: 4rem;
+  border-radius: 10px;
+}
+
+.diversify h1{
+  color: white;
+  
+ }
+
+ .diversify p{
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+ }
+
+.diversify button{
+  color: #3422f5;
+  background-color: white;
+  font-family: 'Inter';
+   font-weight: 600;
+  /* padding: 1rem 6rem; */
+   font-size: 1rem;
+   border-radius: 5px;
+   padding: 0.8rem 0.5rem;
+  
+ }
+
+ .Testimonial_section{
+  display: flex;
+  gap: 4rem;
+  margin-top: 3rem;
+  overflow-x: scroll;
+ }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px){
+
+  
+
+
+
+    header{
+        /* background-color: #FEFBEA; */
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    a{
+        display: block;
+    }
+
+    .hamburger_menu{
+      display: vi;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation > p{
+        align-self: center;
+    }
+    .navigation .myLinks {
+        display: none;
+    }
+
+    .navigation{
+        overflow: hidden;
+        /* background-color: #FEFBEA; */
+        position: relative;
+      }
+
+      .navigation a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      .navigation a.icon {
+       
+        display: block;
+        
+      }
+
+      .navigation a:hover {
+        background-color: #ddd;
+        color: black;
+        
+      }
+
+      .myLinks{
+        display: inline-block;
+      }
+
+      .myLinks>a:hover{
+
+        background-color: #3422f5;
+        color: white;
+        cursor: pointer;
+       
+
+      }
+
+      .hero_image{
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .hero_image > img{
+        max-width: 100%;
+        height: auto;
+    }
+
+      h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      article > p:nth-of-type(1){
+        line-height: 1.5;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      .button_container {
+        display: flex;
+        justify-content: center;
+      }
+
+      button{
+
+        font-family: 'Inter';
+        background-color:  #3422f5;
+        border: 0;
+        color: white;
+        font-weight: 600;
+        /* padding: 1rem 6rem; */
+        font-size: 1rem;
+        border-radius: 5px;
+        width: 100%;
+        padding: 1rem 0;
+        margin: auto;
+
+      }
+
+      
+      .view{
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+        color: #3422f5;
+        font-style: bold;
+        font-weight: 600;
+        margin-top: 0.5rem;
+      }
+
+      .check-input{
+
+        margin-top: 1rem;
+
+      }
+    
+    label{
+        display: block;
+    }
+    
+    .checkbox-container {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+      .checkbox-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        display: block;
+      }
+      
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #ccc;
+        border-radius: 50%;
+      }
+      
+      .checkbox-container:hover .checkmark {
+        background-color: #aaa;
+      }
+      
+      .checkbox-container input:checked ~ .checkmark {
+        background-color: #0a8f17;
+      }
+      
+      .checkmark::before {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      .checkbox-container input:checked ~ .checkmark::before {
+        display: block;
+      }
+      
+      .checkbox-container .checkmark::before {
+        left: 7px;
+        top: 3px;
+        width: 4px;
+        height: 9px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+
+
+      .main_content{
+        margin-top: 4rem;
+        padding: 0 2rem;
+      }
+
+      .portfolio{
+        margin-bottom: 2.5rem;
+      }
+
+      .portfolio P {
+        color: #3422f5;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .description h3{
+
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+
+      }
+       .description img{
+        margin-bottom: 1rem;
+       }
+
+       .description p {
+        margin-bottom: 2rem;
+        opacity: 0.6;
+       }
+
+       .diversify{
+        background-color: #3422f5;
+        padding-top: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 2rem;
+       }
+
+       .diversify h1{
+        color: white;
+        
+       }
+
+       .diversify p{
+        color: white;
+        opacity: 0.8;
+        margin-bottom: 1rem;
+       }
+
+       .diversify button{
+        color: #3422f5;
+        background-color: white;
+        margin-bottom: 2.5rem;
+       }
+
+       .diversify button:hover{
+        background-color: white;
+        color: #3422f5;
+       }
+
+
+      .diversify_image{
+        max-width: 500px ;
+      }
+
+      .diversify_image > img {
+        max-width: 100%;
+
+      }
+
+      .Testimonial{
+        border: 1px solid black;
+        border-color: gray;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border-radius: 5px;
+      }
+
+      .header{
+        display: flex;
+        /* border: 1px solid black; */
+        gap: 10px;
+        margin-bottom: 1rem;
+      }
+
+      .paragraph{
+        align-self: center;
+      }
+
+      .paragraph p:nth-child(1){
+        color: #3422f5;
+        font-weight: 600;
+      }
+
+      .Testimonial > p {
+        margin-bottom: 1.5rem;
+      }
+
+      .Testimonial button {
+        background-color: white;
+        color: #3422f5;
+        border: 1px solid grey;
+        border-color: grey;
+      }
+
+      .Testimonial button:hover{
+
+        cursor: pointer;
+        background-color: #2616d6;
+        color: white;
+
+      }
+
+
+      
+
+}
+
